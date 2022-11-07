@@ -11,7 +11,7 @@ export const Context = ({ children }) => {
     name: faker.commerce.productName(),
     price: faker.commerce.price(),
     image: faker.image.image(),
-    inStock: faker.helpers.arrayElement([1, 2, 5, 10]),
+    inStock: faker.helpers.arrayElement([0, 1, 2, 3, 5, 10]),
     fastDelivery: faker.datatype.boolean(),
     ratings: faker.helpers.arrayElement([1, 2, 3, 4, 5]),
   }));

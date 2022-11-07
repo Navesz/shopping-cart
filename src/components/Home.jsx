@@ -1,7 +1,7 @@
 import { CartState } from "../context/Context";
 import { SingleProduct } from "./SingleProduct";
-import { Filters } from './Filters'
-import { CardGroup } from 'react-bootstrap'
+import { Filters } from "./Filters";
+import { Row } from "react-bootstrap";
 
 export default function Home() {
   const {
@@ -13,11 +13,11 @@ export default function Home() {
     <div className="home">
       <Filters />
 
-      <CardGroup className="productContainer">
+      <Row className="productContainer">
         {products.map((product) => {
           return <SingleProduct product={product} key={product.id} />;
         })}
-      </CardGroup>
+      </Row>
     </div>
   );
 }
